@@ -1,0 +1,83 @@
+<?xml version = "1.0" encoding = "ISO-8859-1"?>
+<aiml version="2" encoding="ISO-8859-1">
+    <!-- qna_cafe_about.aiml -->
+    <category>
+        <pattern>* NAMA * INI</pattern>
+        <template>
+            <random>
+                <li>Cafe ini bernama Kopikan</li>
+                <li>Tempat ini bernama Kopikan</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>PEMILIK</pattern>
+        <template>
+            <random>
+                <li>Pemilik dari Cafe ini adalah Ibu Pertiwi</li>
+                <li>Ibu Pertiwi adalah pemilik dari Cafe ini</li>
+                <li>Tempat ini dimiliki oleh Ibu Pertiwi</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>* PEMILIK *</pattern>
+        <template>
+            <srai>PEMILIK</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>SIAPA PEMILIK *</pattern>
+        <template>
+            <srai>PEMILIK</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* DIBENTUK OLEH *</pattern>
+        <template>
+            <srai>PEMILIK</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* KAPAN * INI *</pattern>
+        <template>
+            Tempat ini mulai berdiri pada tahun 2013 
+        </template>
+    </category>
+    <category>
+        <pattern>* DIMANA</pattern>
+        <template>
+            Cafe ini berada di JL. Am Sangaji Jakarta Timur.
+        </template>
+    </category>
+    <category>
+        <pattern>DIMANA *</pattern>
+        <template>
+            Cafe ini berada di JL. Am Sangaji Jakarta Timur.
+        </template>
+    </category>
+    <category>
+        <pattern>* DIMANA *</pattern>
+        <template>
+            Cafe ini berada di JL. Am Sangaji Jakarta Timur.
+        </template>
+    </category>
+    <category>
+        <pattern>REKOMENDASI</pattern>
+        <template>
+            Kami merekomendasikan Capucino Signature Kopikan
+        </template>
+    </category>
+    <category>
+        <pattern>* REKOMENDASI *</pattern>
+        <template>
+            <srai>REKOMENDASI</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>REKOMENDASI *</pattern>
+        <template>
+            <srai>REKOMENDASI</srai>
+        </template>
+    </category>
+</aiml>

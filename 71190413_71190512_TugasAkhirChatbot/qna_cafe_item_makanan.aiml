@@ -1,0 +1,515 @@
+<?xml version = "1.0" encoding = "ISO-8859-1"?>
+<aiml version="2" encoding="ISO-8859-1">
+    <!-- qna_cafe_item_makanan.aiml -->
+    <category>
+        <pattern>HALAL</pattern>
+        <template>
+            Semua makanan dan minuman di kafe ini Halal ya kak
+        </template>
+    </category>
+    <category>
+        <pattern>* HALAL *</pattern>
+        <template>
+            <srai>HALAL</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>HALAL *</pattern>
+        <template>
+            <srai>HALAL</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>TIDAK SEAFOOD</pattern>
+        <template>
+            Kafe ini menyediakan menu non-seafood, sebagai berikut : ~ ~
+            (America) ~
+            1. Beef wellington ~
+            2. Reindeer Sausage ~
+            3. Enchiladas ~
+            4. Fries with Vinegar ~
+            5. Wagyu Steak [Recommended] ~
+            6. Vegetarian Tacos ~
+             ~
+            (Italian) ~
+            1. Risotto ~
+            2. Pizza ~
+            3. Pasta ~ 
+            4. Lasagne ~
+            5. Vegetarian Pizza ~
+             ~
+            (Indonesia) ~
+            1. Pecel Telur ~
+            2. Nasi Gudeg ~
+            3. Pepes tahu ~
+            4. Gado-gado ~
+            5. kupat tahu ~ 
+        </template>
+    </category>
+    <category>
+        <pattern>* MENU MAKANAN * SEAFOOD *</pattern>
+        <template>
+            <srai>TIDAK SEAFOOD</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* ALERGI SEAFOOD *</pattern>
+        <template>
+            <srai>TIDAK SEAFOOD</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* ALERGI * SEAFOOD *</pattern>
+        <template>
+            <srai>TIDAK SEAFOOD</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* TIDAK SEAFOOD *</pattern>
+        <template>
+            <srai>TIDAK SEAFOOD</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* NON SEAFOOD *</pattern>
+        <template>
+            <srai>TIDAK SEAFOOD</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* TIDAK * SEAFOOD *</pattern>
+        <template>
+            <srai>TIDAK SEAFOOD</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* JANGAN SEAFOOD *</pattern>
+        <template>
+            <srai>TIDAK SEAFOOD</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* JANGAN * SEAFOOD *</pattern>
+        <template>
+            <srai>TIDAK SEAFOOD</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* TIDAK * LAUT *</pattern>
+        <template>
+            <srai>TIDAK SEAFOOD</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* JANGAN * LAUT *</pattern>
+        <template>
+            <srai>TIDAK SEAFOOD</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>VEGETARIAN</pattern>
+        <template>
+            Kafe ini menyediakan menu vegetarian, sebagai berikut : ~ ~
+            (America) ~
+            1. Poblano Peppers ~
+            2. Vegetarian Tacos ~
+             ~
+            (Italian) ~
+            1. Vegetarian Pizza ~
+             ~
+            (Indonesia) ~
+            1. Pecel ~
+            2. Pepes tahu ~
+            3. Gado-gado ~
+            4. kupat tahu ~ 
+        </template>
+    </category>
+    <category>
+        <pattern>* MENU MAKANAN * VEGETARIAN *</pattern>
+        <template>
+            <srai>VEGETARIAN</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* VEGETARIAN *</pattern>
+        <template>
+            <srai>VEGETARIAN</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* VEGAN *</pattern>
+        <template>
+            <srai>VEGETARIAN</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>DAFTAR MAKANAN</pattern>
+        <template>
+            Berikut adalah daftar makanan : ~ ~
+            (America) ~
+            1. Beef wellington ~
+            2. Fried Green Tomatoes ~
+            3. Reindeer Sausage ~
+            4. Enchiladas ~
+            5. Fish Tacos ~
+            6. Lobster Mac and Cheese ~
+            7. Fries with Vinegar ~
+            8. Wagyu Steak [Recomended] ~
+            9. Poblano Peppers ~
+            10. Vegetarian Tacos ~
+             ~
+            (Italian) ~
+            1. Risotto ~
+            2. Pizza ~
+            3. Pasta ~ 
+            4. Gnocchi ~
+            5. Pesto alla Genovese ~
+            6. Lasagne ~
+            7. Vegetarian Pizza ~
+             ~
+            (Indonesia) ~
+            1. Ricebox Ayam [Recommended] ~
+            2. Ricebox sapi ~
+            3. Pecel Telur ~
+            4. Nasi Gudeg ~
+            5. Pepes tahu ~
+            6. Gado-gado ~
+            7. kupat tahu ~ 
+        </template>
+    </category>
+    <category>
+        <pattern>DAFTAR MAKANAN *</pattern>
+        <template>
+            <srai>DAFTAR MAKANAN</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* DAFTAR MAKANAN *</pattern>
+        <template>
+            <srai>DAFTAR MAKANAN</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>DAFTAR MAKANAN *</pattern>
+        <template>
+            <srai>DAFTAR MAKANAN</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* KATEGORI MAKANAN *</pattern>
+        <template>
+            <srai>DAFTAR MAKANAN</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>KATEGORI MAKANAN *</pattern>
+        <template>
+            <srai>DAFTAR MAKANAN</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* MENU MAKANAN *</pattern>
+        <template>
+            <srai>DAFTAR MAKANAN</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>MAKANAN TERBAIK</pattern>
+        <template>
+            Steak wagyu sapi dan ricebox ayam sangat recomended
+        </template>
+    </category>
+    <category>
+        <pattern>* MAKANAN * BEST *</pattern>
+        <template>
+            <srai>MAKANAN TERBAIK</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* MAKANAN * TERBAIK *</pattern>
+        <template>
+            <srai>MAKANAN TERBAIK</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* MAKANAN TERBAIK *</pattern>
+        <template>
+            <srai>MAKANAN TERBAIK</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* MAKANAN TERBAIK *</pattern>
+        <template>
+            <srai>MAKANAN TERBAIK</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* MAKANAN * TERENAK *</pattern>
+        <template>
+            <srai>MAKANAN TERBAIK</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* MAKANAN * ENAK *</pattern>
+        <template>
+            <srai>MAKANAN TERBAIK</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* REKOMENDASI * MAKANAN *</pattern>
+        <template>
+            <srai>MAKANAN TERBAIK</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* MAKANAN * REKOMENDASI *</pattern>
+        <template>
+            <srai>MAKANAN TERBAIK</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* MAKANAN * RECOMENDED *</pattern>
+        <template>
+            <srai>MAKANAN TERBAIK</srai>
+        </template>
+    </category>
+    <!-- Penjelasan setiap makanan -->
+    <category>
+        <pattern>* BEEF WELLINGTON *</pattern>
+        <template>
+            Beef Wellington adalah persiapan steik daging sapi yang dilapisi ~ 
+            dengan "pate", yang kemudian dibungkus dengan parma ham dan puff pastry, ~ 
+            kemudian dipanggang. ~ ~ 
+
+            Beberapa resep termasuk membungkus daging yang dilapisi dalam crêpe ~ 
+            untuk mempertahankan kelembaban dan mencegahnya membuat kue basah. ~ ~ 
+            
+            Tenderloin utuh dapat dibungkus dan dipanggang, kemudian diiris untuk ~ 
+            disajikan, atau tenderloin dapat diiris menjadi beberapa bagian sebelum ~ 
+            dibungkus dan dipanggang. Hidangan ini biasa disajikan dengan kentang atau ~ 
+            sayuran sesuai selera.
+        </template>
+    </category>
+    <category>
+        <pattern>* REINDEER SAUSAGE *</pattern>
+        <template>
+        </template>
+    </category>
+    <category>
+        <pattern>* ENCHILADAS *</pattern>
+        <template>
+            Enchilada adalah makanan utama di kawasan Meksiko. ~
+            Makanan ini terdiri dari tortilla yang diisi lalu digulung, ~
+            setelah itu diberi saus cabai. Enchilada dapat diisi apa saja, ~
+            termasuk daging, keju, kentang, sayuran, makanan laut atau campuran.
+        </template>
+    </category>
+    <category>
+        <pattern>* FRIES WITH VINEGAR *</pattern>
+        <template>
+            Fries With Vinegar adalah kentang potong tangan yang direndam ~
+            dalam cuka, digoreng dalam minyak panas dan dicampur dengan lebih ~
+            banyak cuka dan garam.
+        </template>
+    </category>
+    <category>
+        <pattern>* WAGYU STEAK *</pattern>
+        <template>
+            Daging wagyu adalah salah satu bagian daging sapi asli yang populer ~
+            dari Jepang. Daging sapi wagyu adalah daging sapi autentik yang banyak ~
+            diminati karena tekstur dan rasanya berbeda yang tidak seperti apa pun ~
+            yang pernah dirasakan sebelumnya. ~ ~
+
+            Seperti yang telah disebut di atas, wagyu punya tekstur marmer dan ~
+            lemak yang cukup tinggi. Hal ini membuat dagingnya terasa empuk, gurih, ~
+            dan meleleh di mulut. Guratan halus lemak putih di dalam daging memberikan ~
+            cita rasa manis yang khas.
+        </template>
+    </category>
+    <category>
+        <pattern>* VEGETARIAN TACOS *</pattern>
+        <template>
+            Banyak Orang menyukai taco ini! ~
+            Kacang hitam dan ubi jalar panggang yang dibumbui cabai ~
+            membuatnya enak dan hangat, saus yogurt alpukat yang lembut ~
+            mengisinya dengan rasa zesty, dan acar bawang merah menambahkan ~
+            sentuhan akhir yang manis dan tajam.
+        </template>
+    </category>
+    <category>
+        <pattern>* FRIED GREEN TOMATOES *</pattern>
+        <template>
+            Fried green tomatoes adalah hidangan kuliner yang biasanya ditemukan ~
+            di Amerika Serikat bagian selatan, terbuat dari tomat mentah (hijau) yang ~
+            dilapisi tepung jagung dan digoreng. 
+        </template>
+    </category>
+<category>
+        <pattern>* FISH TACOS *</pattern>
+        <template>
+            Fish Tacos adalah jenis ikan putih yang ringan. Cod, halibut, nila, ~
+            dan mahi mahi adalah pilihan yang baik. Ikan dibumbui dengan bubuk ~
+            cabai, paprika asap, bubuk bawang putih dan garam. ~
+            Perpaduan bumbu sederhana ini memberi ikan rasa terbaik! ~ ~
+
+            Sausnya dibuat dengan yogurt Yunani polos, air jeruk nipis, ~
+            bubuk bawang putih, sriracha dan garam. ~ Yoghurt Yunani membuat sausnya ~
+            ringan, sehat, dan tajam. Anda bisa membuat saus dengan mayones dan krim ~
+            asam jika Anda mau. ~ ~
+
+            Kubis merah, alpukat, ketumbar, dan air jeruk nipis segar menyeimbangkan ~
+            rasa dan tekstur dalam resep taco ikan yang mudah ini. Saya lebih suka tortilla ~ 
+            jagung untuk taco, tetapi Anda juga bisa menggunakan tortilla tepung.
+        </template>
+   </category>
+<category>
+        <pattern>* LOBSTER MAC AND CHEESE *</pattern>
+        <template>
+            Lobster Mac and Cheese adalah hidangan pasta asal Amerika yang cukup ~
+            populer dan sering disajikan sebagai menu andalan di berbagai restoran. ~
+            Perpaduan antara pasta makaroni dan lelehan kejunya sangat menggoda, ~
+            diberi potongan lobster menghasilkan cita rasa yang begitu gurih, ~
+            creamy dan mengenyangkan.
+        </template>
+  </category>
+<category>
+        <pattern>* POBLANO PEPPERS *</pattern>
+        <template>
+            Poblano Peppers adalah cabai Meksiko yang populer, berwarna hijau ~
+            sangat gelap, matang menjadi merah tua atau coklat. Mereka ringan, ~
+            besar dan berbentuk hati.
+        </template>
+   </category>
+<category>
+        <pattern>* RISOTTO *</pattern>
+        <template>
+            Risotto merupakan hidangan nasi khas Italia yang dimasak dan diaduk ~
+            dengan kaldu hingga creamy. Terbuat dari beras, kaldu, dan rempah aromatik. ~
+            Risotto akan mempunyai tekstur yang lebih creamy apabila menggunakan ~
+            kaldu hangat.
+        </template>
+    </category>
+<category>
+        <pattern>* PIZZA *</pattern>
+        <template>
+            Pizza adalah sejenis roti bundar, pipih yang dipanggang di oven dan biasanya ~
+            dilumuri saus tomat serta keju dengan bahan makanan tambahan lainnya yang bisa ~
+            dipilih. Keju yang dipakai biasanya mozzarella atau “keju pizza” ~ ~
+        
+            Jenis bahan lain juga dapat ditaruh di atas pizza, biasanya daging dan saus, ~
+            seperti salami dan pepperoni, ham, bacon, buah seperti nanas dan zaitun, sayuran ~
+            seperti cabe dan paprika, dan juga bawang bombay, jamur dan lain lain.
+        </template>
+    </category>
+<category>
+        <pattern>* PASTA *</pattern>
+        <template>
+            Pasta adalah makanan olahan yang digunakan pada masakan Italia, yang biasanya ~
+            terbuat dari adonan tidak beragi berbahan tepung gandum durum (semolina) yang ~
+            dicampur dengan air atau telur dan dibentuk menjadi lembaran-lembaran atau ~
+            bentuk-bentuk yang beragam, yang kemudian dimasak dengan cara direbus atau ~
+            dipanggang.
+        </template>
+    </category>
+<category>
+        <pattern>* GNOCCHI *</pattern>
+        <template>
+            Gnocchi merupakan pangsit yang terbuat dari kentang tumbuk yang dikombinasikan ~
+            dengan tepung untuk menyatukan adonan. Gnocchi dibentuk dengan menggulung adonan ~
+            kemudian memotongnya menjadi seukuran gigitan. ~ ~
+
+            Makanan ini disajikan dengan menumis bawang putih dengan sedikit mentega, ~
+            kemudian menuangkannya di atas gnocchi.
+        
+        </template>
+    </category>
+<category>
+        <pattern>* PESTO ALLA GENOVESE *</pattern>
+        <template>
+            Pasta yang diberikan saus Pesto Alla Genovese yang dibuat dari genovese basil, ~
+            garam, bawang putih, tagiasco atau extra virgin olive oil, pine nuts, dan keju.
+        </template>
+    </category>
+<category>
+        <pattern>* LASAGNE *</pattern>
+        <template>
+            Lasagne adalah jenis pasta, mungkin salah satu jenis tertua, terbuat dari ~
+            lembaran datar yang sangat lebar. Kedua istilah tersebut juga dapat merujuk ~
+            pada hidangan Italia yang terbuat dari lapisan lasagna yang ditumpuk bergantian ~
+            dengan isian seperti rag (daging giling dan saus tomat), sayuran, keju ~
+            (yang mungkin termasuk ricotta, mozzarella, dan parmesan), serta bumbu ~
+            dan rempah-rempah, seperti Bumbu Italia, seperti bawang putih, oregano, dan basil. ~ ~
+
+            Hidangan ini bisa diberi keju parut, yang meleleh setelah dipanggang.
+        </template>
+    </category>
+<category>
+        <pattern>* VEGETARIAN PIZZA *</pattern>
+        <template>
+            Pizza yang dibuat dengan bahan bahan bebas produk hewani, ~
+            mulai dari adonan roti sampai toppingnya.
+        </template>
+    </category>
+<category>
+        <pattern>* PECEL TELUR *</pattern>
+        <template>
+            Pecel atau pecal adalah makanan yang menggunakan bumbu sambal kacang sebagai ~
+            bahan utamanya yang dicampur dengan aneka jenis sayuran. Makanan ini populer ~
+            terutama di wilayah DI Yogyakarta, Jawa Tengah, dan Jawa Timur. Asal kata dan ~
+            daerah pecel belum diketahui secara pasti. Dalam bahasa Jawa, pecel dapat ~
+            diartikan sebagai ‘tumbuk’ atau ‘dihancurkan dengan cara ditumbuk.
+        </template>
+    </category>
+<category>
+        <pattern>* NASI GUDEG *</pattern>
+        <template>
+            Gudeg adalah salah satu masakan khas indonesia yang terkenal akan kelezatannya. ~
+            Masakan ini merupakan masakan tradisional dan khas Provinsi Yogyakarta dan ~
+            Jawa Tengah Indonesia. ~ ~
+
+            Gudeg terbuat dari nangka muda mentah (Jawa: gori). Perlu waktu berjam-jam ~
+            untuk membuatnya. Gudeng dimasak dengan gula aren, dan santan rempah-rempah ~ 
+            tambahan termasuk bawang putih, bawang merah, kemiri, biji ketumbar, lengkuas, ~
+            daun salam, dan daun jati, yang memberikan warna coklat kemerahan ke masakan.~ ~
+
+            Gudeg biasanya dimakan dengan nasi dan disajikan dengan kuah santan kental, ~
+            ayam kampung, telur, tempe, tahu dan sambal goreng krecek. ~
+        </template>
+    </category>
+<category>
+        <pattern>* PEPES TAHU *</pattern>
+        <template>
+            Pepes tahu merupakan sajian yang terbuat tahu dan biasanya diolah bersama dengan ~
+            ikan, daun kemangi, serta bumbu rempah. ~
+
+            Pepes tahu dibungkus menggunakan daun pisang yang dimasak dengan cara dikukus ~
+            kemudian dibakar hingga matang. Rasa pepes tahu gurih dan lezat, sangat cocok ~
+            dijadikan lauk makan siang sebagai pendamping nasi. ~
+        </template>
+    </category>
+<category>
+        <pattern>* GADO-GADO *</pattern>
+        <template>
+            Gado-gado merupakan salah satu makanan khas asal Jakarta. ~
+            Makanan ini menggunakan potongan sayur rebus seperti selada, ~
+            kubis, bunga kol, kentang, kacang panjang, dan taoge ~
+            Adapula sayuran lainnya adalah pare dan mentimun.
+
+            Sayur-sayuran tadi dicampur dengan bumbu kacang yan sudah dihaluskan. ~
+            Gado-gado biasanya dilengkapi dengan tambahan telur rebus dan kerupuk atau ~
+            emping goreng.
+        </template>
+    </category>
+<category>
+        <pattern>* KUPAT TAHU *</pattern>
+        <template>
+            Tahu kupat merupakan kuliner lezat yang berasal dari Solo. ~
+            Sesuai namanya, tahu kupat berbahan dasar ketupat dan tahu putih yang ~
+            digoreng. ~ ~
+
+            Tahu kupat biasa disajikan dengan irisan kol, taoge, bakwan, dan mie. ~
+            Kombinasi antara beragam bahan makanan ini disiram dengan kuah kecap ~
+            berwarna cokelat kehitaman, lalu ditaburi kacang goreng utuh. ~
+        </template>
+    </category>
+</aiml>

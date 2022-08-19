@@ -1,0 +1,90 @@
+<?xml version = "1.0" encoding = "ISO-8859-1"?>
+<aiml version="2" encoding="ISO-8859-1">
+    <!-- qna_cafe_item_harga.aiml -->
+    <category>
+        <pattern>DAFTAR HARGA MAKANAN</pattern>
+        <template>
+            Berikut adalah daftar minuman : ~ ~
+            (America) ~
+            1. Beef wellington * * * * = 149K ~
+	        2. Fried Green Tomatoes * * * * = 30K ~
+            3. Reindeer Sausage * * * * = 32K ~
+            4. Enchiladas * * * * = 29K ~
+            5. Fish Tacos * * * * = 34K ~
+            6. Lobster Mac and Cheese * * * * = 93K ~
+            7. Fries with Vinegar * * * * = 27K ~
+            8. Wagyu Steak * * * * = 135K ~
+            9. Poblano Peppers * * * * = 21K ~ 
+            10. Vegetarian Tacos * * * * = 19K ~
+             ~
+            (Italian) ~
+            1. Risotto * * * * = 27K ~
+            2. Pizza * * * * = 59K ~
+            3. Pasta * * * * = 34K ~
+            4. Gnocchi * * * * = 29K ~
+            5. Pesto alla Genovese * * * * = 31K ~
+            6. Lasagne * * * * = 21K ~
+            7. Vegetarian Pizza * * * * = 41K ~
+             ~
+            (Indonesia) ~
+            1. Ricebox Ayam * * * * = 23K ~
+            2. Ricebox sapi * * * * = 31K ~
+            3. Pecel Telur * * * * = 13K ~
+            4. Nasi Gudeg * * * * = 41K ~
+            5. Pepes tahu * * * * = 24K ~
+            6. Gado-gado * * * * = 19K ~
+            7. kupat tahu * * * * = 27K ~
+        </template>
+    </category>
+    <category>
+        <pattern>* HARGA MAKANAN *</pattern>
+        <template>
+            <srai>DAFTAR HARGA MAKANAN</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>DAFTAR HARGA MINUMAN</pattern>
+        <template>
+             Berikut adalah daftar harga minuman : ~ ~
+            (Kopi) ~
+            1. Capucino Signature * * * = 40K ~
+            2. Americano * * * = 14K ~
+            3. Banana Coffe * * * = 21K ~
+            4. Caramell Late * * * = 23K ~
+            5. Coffe Bery * * * = 17K ~
+            6. Coconut Espresso * * * = 16K ~
+            7. Hazeltnut Coffe * * * = 33K ~
+            8. V60 * * * = 19K ~
+            9. Matcha Coffe * * * = 36K ~
+            10. Latte ~Coffe * * * = 21K ~
+             ~
+            (Non-Kopi) ~
+            1. Black Tea * * * = 13K ~
+            2. Chocolate * * * = 23K ~
+            3. Chocolate Caramell * * * = 40K ~
+            4. Hazelnut * * * = 31K ~ 
+            5. Ice tea * * * = 8K ~
+            6. Infusion tea * * * = 12K ~
+            7. Lemon tea * * * = 9K ~
+            8. Stawberry * * * = 38K ~
+            9. Taro Velvet * * * = 39K ~
+             ~
+            (Jus) ~
+            1. Jus Apel * * * = 23K ~
+            2. Jus Apokat * * * = 29K ~
+            3. Jus Anggur * * * = 23K ~
+            4. Jus Buah Naga * * * = 23K ~
+            5. Jus Durian * * * = 33K ~
+            6. Jus Pisang * * * = 23K ~
+            7. Jus Mangga * * * = 23K ~
+            8. Jus Melon * * * = 23K ~
+            9. Jus Sirsak * * * = 20K ~
+        </template>
+    </category>
+    <category>
+        <pattern>* HARGA MINUMAN *</pattern>
+        <template>
+            <srai>DAFTAR HARGA MINUMAN</srai>
+        </template>
+    </category>
+</aiml>

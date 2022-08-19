@@ -1,0 +1,430 @@
+<?xml version = "1.0" encoding = "ISO-8859-1"?>
+<aiml version="2" encoding="ISO-8859-1">
+    <!-- qna_cafe_item_minuman.aiml -->
+    <category>
+        <pattern>TIDAK KOPI</pattern>
+        <template>
+            Berikut adalah daftar minuman tidak kopi : ~ ~
+            (Non-Kopi) ~
+            1. Black Tea ~
+            2. Chocolate ~
+            3. Chocolate Caramell ~
+            4. Hazelnut ~ 
+            5. Ice tea ~
+            6. Infusion tea ~
+            7. Lemon tea ~
+            8. Stawberry ~
+            9. Taro Velvet ~
+             ~
+            (Jus) ~
+            1. Jus Apel ~
+            2. Jus Apokat ~
+            3. Jus Anggur ~
+            4. Jus Buah Naga ~
+            5. Jus Durian ~
+            6. Jus Pisang ~
+            7. Jus Mangga ~
+            8. Jus Melon ~
+            9. Jus Sirsak ~
+        </template>
+    </category>
+    <category>
+        <pattern>* NON KOPI *</pattern>
+        <template>
+            <srai>TIDAK KOPI</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* TIDAK * KOPI *</pattern>
+        <template>
+            <srai>TIDAK KOPI</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>MINUMAN JUS</pattern>
+        <template>
+            Berikut adalah daftar minuman jus : ~ ~
+            (Jus) ~
+            1. Jus Apel ~
+            2. Jus Apokat ~
+            3. Jus Anggur ~
+            4. Jus Buah Naga ~
+            5. Jus Durian ~
+            6. Jus Pisang ~
+            7. Jus Mangga ~
+            8. Jus Melon ~
+            9. Jus Sirsak ~
+        </template>
+    </category>
+    <category>
+        <pattern>* MINUMAN * JUS *</pattern>
+        <template>
+            <srai>MINUMAN JUS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* MINUMAN JUS *</pattern>
+        <template>
+            <srai>MINUMAN JUS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* JUS *</pattern>
+        <template>
+            <srai>MINUMAN JUS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>MINUMAN KOPI</pattern>
+        <template>
+            Berikut adalah daftar minuman kopi : ~ ~
+            (Kopi) ~
+            1. Capucino Signatures ~
+            2. Americano ~
+            3. Banana Coffe ~
+            4. Caramell Late ~
+            5. Coffe Bery ~
+            6. Coconut Espresso ~
+            7. Hazeltnut Coffe~
+            8. V60 ~
+            9. Matcha Coffe ~
+            10. Latte ~Coffe ~
+        </template>
+    </category>
+    <category>
+        <pattern>* MINUMAN KOPI *</pattern>
+        <template>
+            <srai>MINUMAN KOPI</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* MENU KOPI *</pattern>
+        <template>
+            <srai>MINUMAN KOPI</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* MINUMAN COFFE *</pattern>
+        <template>
+            <srai>MINUMAN KOPI</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* MENU COFFE *</pattern>
+        <template>
+            <srai>MINUMAN KOPI</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>DAFTAR MINUMAN</pattern>
+        <template>
+            Berikut adalah daftar minuman : ~ ~
+            (Kopi) ~
+            1. Capucino Signatures ~
+            2. Americano ~
+            3. Banana Coffee ~
+            4. Caramel Latte ~
+            5. Coffee Berry ~
+            6. Coconut Espresso ~
+            7. Hazeltnut Coffee ~
+            8. V60 ~
+            9. Matcha Coffee ~
+            10. Coffee Latte ~
+             ~
+            (Non-Kopi) ~
+            1. Black Tea ~
+            2. Chocolate ~
+            3. Chocolate Caramel ~
+            4. Hazelnut ~ 
+            5. Ice tea ~
+            6. Infusion tea ~
+            7. Lemon tea ~
+            8. Strawberry ~
+            9. Taro Velvet ~
+             ~
+            (Jus) ~
+            1. Jus Apel ~
+            2. Jus Apokat ~
+            3. Jus Anggur ~
+            4. Jus Buah Naga ~
+            5. Jus Durian ~
+            6. Jus Pisang ~
+            7. Jus Mangga ~
+            8. Jus Melon ~
+            9. Jus Sirsak ~
+        </template>
+    </category>
+    <category>
+        <pattern>DAFTAR MINUMAN *</pattern>
+        <template>
+            <srai>DAFTAR MINUMAN</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* DAFTAR MINUMAN *</pattern>
+        <template>
+            <srai>DAFTAR MINUMAN</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* KATEGORI MINUMAN *</pattern>
+        <template>
+            <srai>DAFTAR MINUMAN</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>KATEGORI MINUMAN *</pattern>
+        <template>
+            <srai>DAFTAR MINUMAN</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* MENU MINUMAN *</pattern>
+        <template>
+            <srai>DAFTAR MINUMAN</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>MINUMAN TERBAIK</pattern>
+        <template>
+            Kami memiliki beberapa minuman rekomended : ~ ~
+            (Kopi) ~
+            1. Capucino Signatures ~
+            2. Coffe Bery ~
+             ~
+            (Non-Kopi) ~
+            1. Infusion tea ~
+            2. Chocolate Caramell ~
+             ~
+            (Jus) ~
+            1. Jus Apokat ~
+            2. Jus Anggur ~
+            3. Jus Durian ~
+        </template>
+    </category>
+    <category>
+        <pattern>* MINUMAN * BEST *</pattern>
+        <template>
+            <srai>MAKANAN TERBAIK</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* MINUMAN * TERBAIK *</pattern>
+        <template>
+            <srai>MINUMAN TERBAIK</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* MINUMAN TERBAIK *</pattern>
+        <template>
+            <srai>MINUMAN TERBAIK</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* MINUMAN * TERENAK *</pattern>
+        <template>
+            <srai>MINUMAN TERBAIK</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* MINUMAN * ENAK *</pattern>
+        <template>
+            <srai>MINUMAN TERBAIK</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* REKOMENDASI * MINUMAN *</pattern>
+        <template>
+            <srai>MINUMAN TERBAIK</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* MINUMAN * REKOMENDASI *</pattern>
+        <template>
+            <srai>MINUMAN TERBAIK</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* MINUMAN * RECOMENDED *</pattern>
+        <template>
+            <srai>MINUMAN TERBAIK</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>KOPI BERAT</pattern>
+        <template>
+            Berikut adalah daftar minuman kopi berat: ~ ~
+            1. Americano ~
+            2. V60 ~
+            3. Latte ~Coffe ~
+            4. Caramell Late ~
+        </template>
+    </category>
+    <category>
+        <pattern>* KOPI BERAT *</pattern>
+        <template>
+            <srai>KOPI BERAT</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* KOPI * KAFEIN TINGGI *</pattern>
+        <template>
+            <srai>KOPI BERAT</srai>
+        </template>
+    </category>
+    <!-- Penjelasan setiap minuman -->
+    <category>
+        <pattern>* JUS *</pattern>
+        <template>
+            <think><set name="object-jus"><star index = "2"/></set></think>
+            <condition name = "object-jus" value="apel ya">
+                <think><set name="object-jus">Apel</set></think>
+                Jus <get name = "object-jus"></get> murni tanpa gula yang kemudian di campur dengan bumbu khusus ~
+                yang membuat jus menjadi semakin segar dan nikmat.
+            </condition>
+            <condition name = "object-jus" value="apokat ya">
+                <think><set name="object-jus">Apokat</set></think>
+                Jus <get name = "object-jus"></get> murni tanpa gula yang kemudian di campur dengan bumbu khusus ~
+                yang membuat jus menjadi semakin segar dan nikmat.
+            </condition>
+            <condition name = "object-jus" value="anggur ya">
+                <think><set name="object-jus">Anggur</set></think>
+                Jus <get name = "object-jus"></get> murni tanpa gula yang kemudian di campur dengan bumbu khusus ~
+                yang membuat jus menjadi semakin segar dan nikmat.
+            </condition>
+            <condition name = "object-jus" value="buah naga ya">
+                <think><set name="object-jus">Buah Naga</set></think>
+                Jus <get name = "object-jus"></get> murni tanpa gula yang kemudian di campur dengan bumbu khusus ~
+                yang membuat jus menjadi semakin segar dan nikmat.
+            </condition>
+            <condition name = "object-jus" value="durian ya">
+                <think><set name="object-jus">Durian</set></think>
+                Jus <get name = "object-jus"></get> murni tanpa gula yang kemudian di campur dengan bumbu khusus ~
+                yang membuat jus menjadi semakin segar dan nikmat.
+            </condition>
+            <condition name = "object-jus" value="pisang ya">
+                <think><set name="object-jus">Pisang</set></think>
+                Jus <get name = "object-jus"></get> murni tanpa gula yang kemudian di campur dengan bumbu khusus ~
+                yang membuat jus menjadi semakin segar dan nikmat.
+            </condition>
+            <condition name = "object-jus" value="mangga ya">
+                <think><set name="object-jus">Mangga</set></think>
+                Jus <get name = "object-jus"></get> murni tanpa gula yang kemudian di campur dengan bumbu khusus ~
+                yang membuat jus menjadi semakin segar dan nikmat.
+            </condition>
+            <condition name = "object-jus" value="melon ya">
+                <think><set name="object-jus">Melon</set></think>
+                Jus <get name = "object-jus"></get> murni tanpa gula yang kemudian di campur dengan bumbu khusus ~
+                yang membuat jus menjadi semakin segar dan nikmat.
+            </condition>
+            <condition name = "object-jus" value="sirsak ya">
+                <think><set name="object-jus">Sirsak</set></think>
+                Jus <get name = "object-jus"></get> murni tanpa gula yang kemudian di campur dengan bumbu khusus ~
+                yang membuat jus menjadi semakin segar dan nikmat.
+            </condition>
+        </template>
+    </category>
+    <category>
+        <pattern>* CAPPUCCINO SIGNATURES *</pattern>
+        <template>
+            Cappuccino adalah minuman tradisional Italia yang terkenal ~
+            dengan lapisan atasnya yang berupa froth susu yang biasanya ~
+            di-garnish dengan bubuk coklat. ~ ~
+ 
+            Kamu akan merasakan foam yang agak tegas dan bold di tegukan pertama, ~
+            lalu diikuti kopi dengan rasa milky yang kuat setelahnya. ~
+        </template>
+    </category>
+    <category>
+        <pattern>* AMERICANO *</pattern>
+        <template>
+            Americano merupakan minuman espresso yang dicampur dengan air panas. ~
+        </template>
+    </category>
+    <category>
+        <pattern>* BANANA COFFEE  *</pattern>
+        <template>
+            Banana Coffee adalah campuran Espresso, banana smoothie dan susu. ~
+            Banana Coffee yang secara ajaib memiliki sensasi nikmat yang lain dan ~
+            hebatnya mampu disajikan dengan dingin dan panas dengan rasa enak yang sama besar. ~ ~
+        </template>
+    </category>
+    <category>
+        <pattern>* CARAMEL LATTE  *</pattern>
+        <template>
+            Rasa manis, dari caramel yang legit akan berpadu dengan rasa creamy yang ~
+            kuat dari susu dan pahitnya kopi.
+        </template>
+    </category>
+    <category>
+        <pattern>* COFFEE BERRY  *</pattern>
+        <template>
+            Coffee Berry merupakan Minuman Coffee dengan bahan utama Kopi Arabica ~
+            Gayo ditambahkan Syrup Strawberry dan Fresh Milk.
+        </template>
+    </category>
+    <category>
+        <pattern>* COCONUT ESPRESSO  *</pattern>
+        <template>
+            Coconut Espresso merupakan perpaduan espresso, coconut water. ~
+            Campuran coconut water membuat kopi ini lebih soft dibandingkan kopi lainnya. ~
+        </template>
+    </category>
+    <category>
+        <pattern>* HAZELNUT COFFEE *</pattern>
+        <template>
+            Hazelnut Coffee ini berbahan dasar kopi Robusta yang kemudian di mix dengan ~
+            fresh milk dan tentu sesuai namanya, minuman ini juga diberi sirup hazelnut. ~
+            Dari perpaduan campuran tersebut sudah bisa dibayangkan kenikmatan yang ~
+            tersuguh dalam segelas minuman tersebut.
+        </template>
+    </category>
+    <category>
+        <pattern>* V60  *</pattern>
+        <template>
+            Kopi yang disajikan dalam wadah bentuknya "V" dengan sudut 60 derajat. ~
+            Sisi internal juga memiliki tonjolan interior yang membantu aliran udara selama ~
+            metode pembuatan bir. Kertas saring dimasukkan ke dalam bentuk V dan ampas ~
+            kopi ditempatkan di dalam kertas saring. Kopi yang diseduh kemudian menetes ke ~
+            cangkir Anda, menghasilkan kopi yang enak.
+        </template>
+    </category>
+    <category>
+        <pattern>* MATCHA COFFEE  *</pattern>
+        <template>
+            Matcha Coffee merupakan perpaduan antara Bubuk Matcha, Susu, dan Espresso. 
+        </template>
+    </category>
+    <category>
+        <pattern>* COFFEE LATTE  *</pattern>
+        <template>
+            Coffee Latte adalah Kopi Espresso yang diberi Susu. ~
+            Bisa dinikmati dingin maupun panas.
+        </template>
+    </category>
+    <category>
+        <pattern>* BLACK TEA  *</pattern>
+        <template>
+           Black Tea umumnya lebih kuat dalam rasa daripada teh lainnya. ~
+           Black Tea adalah jenis teh paling populer di Barat, kemungkinan ~
+           besar karena rasanya yang berani dan umur simpan yang lama.~ ~
+
+           Black Tea dinikmati baik panas maupun dingin. 
+        </template>
+    </category>
+    <category>
+        <pattern>* CHOCOLATE *</pattern>
+        <template>
+            Bubuk Chocolate yang diseduh dengan susu segar. Memiliki cita rasa yang milky ~
+	        juga creamy. Dinikmati baik panas maupun dingin. 
+        </template>
+    </category> 
+    <category>
+        <pattern>* CHOCOLATE CARAMEL *</pattern>
+        <template>  
+ 	        Chocolate caramel sebagai salah satu minuman segar, lezat dan sehat. ~
+            Minuman ini terbuat dari cocoa powder. Rasa manisnya tidak berlebihan. ~
+            Karena caramel yang digunakan terbuat dari brown sugar.
+        </template>     
+    </category>
+</aiml>

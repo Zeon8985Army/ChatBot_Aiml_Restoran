@@ -1,0 +1,71 @@
+<?xml version = "1.0" encoding = "ISO-8859-1"?>
+<aiml version="2" encoding="ISO-8859-1">
+    <!-- qna_cafe_order.aiml -->
+    <category>
+        <pattern>ORDER</pattern>
+        <template>
+            Untuk cara order terdapat tombol di meja yang dapat ditekan ~
+            Waiter akan datang untuk mencatat pesanan anda
+        </template>
+    </category>
+    <category>
+        <pattern>* CARA ORDER *</pattern>
+        <template>
+            <srai>ORDER</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* CARA MEMESAN *</pattern>
+        <template>
+            <srai>ORDER</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* CARA MENGORDER *</pattern>
+        <template>
+            <srai>ORDER</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* CARA MENGORDER *</pattern>
+        <template>
+            <srai>ORDER</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>BAGAIMANA * MENGORDER *</pattern>
+        <template>
+            <srai>ORDER</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>BAGAIMANA MENGORDER *</pattern>
+        <template>
+            <srai>ORDER</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>BAGAIMANA * ORDER *</pattern>
+        <template>
+            <srai>ORDER</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>BAGAIMANA * MEMESAN *</pattern>
+        <template>
+            <srai>ORDER</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>BAGAIMANA MEMESAN *</pattern>
+        <template>
+            <srai>ORDER</srai>
+        </template>
+    </category>
+    <!-- <category>
+        <pattern>* MEMESAN *</pattern>
+        <template>
+            <srai>ORDER</srai>
+        </template>
+    </category> -->
+</aiml>

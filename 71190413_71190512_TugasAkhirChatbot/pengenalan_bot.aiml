@@ -1,0 +1,147 @@
+<?xml version = "1.0" encoding = "ISO-8859-1"?>
+<aiml version="2" encoding="ISO-8859-1">
+    <!-- pengenalan_bot.aiml -->
+    <category>
+        <pattern>HALO</pattern>
+        <template>
+            <random>
+                <li>Halo... Apa ada yang bisa saya bantu ?</li>
+                <li>Hai... Apa ada yang bisa saya bantu ?</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>HALO *</pattern>
+        <template>
+            <srai>HALO</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* HALO *</pattern>
+        <template>
+            <srai>HALO</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>HAI *</pattern>
+        <template>
+            <srai>HALO</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>SELAMAT *</pattern>
+        <template>
+            <random>
+                <li>Selamat <star/>. Apa ada yang bisa saya bantu ?</li>
+                <li>Selamat <star/></li>
+                <li><star/> juga. Ada keperluhan apa ya ?</li>
+            </random>
+        </template>
+    </category>
+    <!-- AREA PENGENALAN BOT -->
+    <category>
+        <pattern>* BERBICARA DENGAN SIAPA *</pattern>
+        <template>
+            <srai>SAYA BERBICARA DENGAN SIAPA YA</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>DENGAN SIAPA *</pattern>
+        <template>
+            <srai>SAYA BERBICARA DENGAN SIAPA YA</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>SAYA BERBICARA DENGAN SIAPA YA</pattern>
+        <template>
+            <random>
+                <li>Kamu sedang berbicara dengan Maleo.</li>
+                <li>Anda sedang berbicara dengan saya, yaitu Maleo</li>
+                <li>Yang sedang kamu ajak bicara adalah Bot Maleo</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>KAMU SIAPA</pattern>
+        <template><srai>NAMA KAMU SIAPA</srai></template>
+    </category>
+    <category>
+        <pattern>SIAPA KAMU</pattern>
+        <template><srai>NAMA KAMU SIAPA</srai></template>
+    </category>
+    <category>
+        <pattern>SIAPA INI</pattern>
+        <template><srai>NAMA KAMU SIAPA</srai></template>
+    </category>
+    <category>
+        <pattern>SIAPA KAMU</pattern>
+        <template><srai>NAMA KAMU SIAPA</srai></template>
+    </category>
+    <category>
+        <pattern>* NAMAMU</pattern>
+        <template><srai>NAMA KAMU SIAPA</srai></template>
+    </category>
+    <category>
+        <pattern>NAMAMU *</pattern>
+        <template><srai>NAMA KAMU SIAPA</srai></template>
+    </category>
+    <category>
+        <pattern>* NAMA KAMU</pattern>
+        <template><srai>NAMA KAMU SIAPA</srai></template>
+    </category>
+    <category>
+        <pattern>NAMA KAMU *</pattern>
+        <template><srai>NAMA KAMU SIAPA</srai></template>
+    </category>
+    <category>
+        <pattern>NAMA KAMU SIAPA</pattern>
+        <template>
+            Nama saya Maleo.
+        </template>
+    </category>
+    <category>
+        <pattern>* NAMAMU *</pattern>
+        <template>
+            Nama saya Maleo.
+        </template>
+    </category>
+    <category>
+        <pattern>KABAR GIMANA</pattern>
+        <template><srai>APA KABAR</srai></template>
+    </category>
+    <category>
+        <pattern>* KAMU MALEO *</pattern>
+        <template>Ya saya Maleo</template>
+    </category>
+    <!-- Basa basi -->
+    <category>
+        <pattern>* KABAR *</pattern>
+        <template>
+            <random>
+                <li>Baik...</li>
+                <li>Saya Baik...</li>
+                <li>Kabar saya baik..</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>* SUKA *</pattern>
+        <template>
+            <think><set name="object-suka"><star index = "2"/></set></think>
+            <condition name = "object-suka" value="kopi">
+                <random>
+                    <li>Wah.. saya juga suka <get name = "object-suka"></get></li>
+                    <li>Saya juga suka <get name = "object-suka"></get></li>
+                    <li>Maleo juga suka dengan <get name = "object-suka"></get>, silahkan tanya-tanya</li>
+                </random>
+            </condition>
+            <condition name = "object-suka" value="coffee">
+                <random>
+                    <li>Wah.. saya juga suka <get name = "object-suka"></get></li>
+                    <li>Saya juga suka <get name = "object-suka"></get></li>
+                    <li>Maleo juga suka dengan <get name = "object-suka"></get>, silahkan tanya-tanya</li>
+                </random>
+            </condition>
+        </template>
+    </category>
+</aiml>

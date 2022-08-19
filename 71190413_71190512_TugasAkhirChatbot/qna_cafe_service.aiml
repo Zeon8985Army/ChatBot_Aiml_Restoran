@@ -1,0 +1,176 @@
+<?xml version = "1.0" encoding = "ISO-8859-1"?>
+<aiml version="2" encoding="ISO-8859-1">
+    <!-- qna_cafe_about.aiml -->
+    <category>
+        <pattern>ADA WIFI</pattern>
+        <template>
+            Ada kak
+        </template>
+    </category>
+    <category>
+        <pattern>* ADA WIFI *</pattern>
+        <template>
+            <srai>ADA WIFI</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* TERDAPAT WIFI *</pattern>
+        <template>
+            <srai>ADA WIFI</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>ROKOK</pattern>
+        <template>
+            <random>
+                <li>Kafe ini menyediakan area untuk merokok</li>
+                <li>Ada kak</li>
+            </random>        
+        </template>
+    </category>
+    <category>
+        <pattern>* ADA * ROKOK *</pattern>
+        <template>
+            <srai>ROKOK</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* TERDAPAT * ROKOK *</pattern>
+        <template>
+            <srai>ROKOK</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* MEROKOK *</pattern>
+        <template>
+            Boleh kak
+        </template>
+    </category>
+    <category>
+        <pattern>* OPERASIONAL *</pattern>
+        <template>
+            Tempat ini buka dari jam 08:00 hingga 24:00
+        </template>
+    </category>
+    <category>
+        <pattern>* KAPASITAS *</pattern>
+        <template>
+            Tersedia lebih dari 200 kursi untuk para pengunjung
+        </template>
+    </category>
+    <category>
+        <pattern>* RESERVASI *</pattern>
+        <template>
+            Silahkan hubungi nomor berikut 08199922233 untuk melakukan reservasi
+        </template>
+    </category>
+    <category>
+        <pattern>KIDSCHAIR</pattern>
+        <template>
+            Ditempat ini terdapat kursi untuk anak kecil atau balita.
+        </template>
+    </category>
+    <category>
+        <pattern>* KURSI * ANAK *</pattern>
+        <template>
+            <srai>KIDSCHAIR</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* KIDSCHAIR *</pattern>
+        <template>
+            <srai>KIDSCHAIR</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>LIVE MUSIC</pattern>
+        <template>
+            Kafe ini terdapat Live Music setiap harinya
+        </template>
+    </category>
+    <category>
+        <pattern>* LIVE MUSIC *</pattern>
+        <template>
+            <srai>LIVE MUSIC</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* LIVEMUSIC *</pattern>
+        <template>
+            <srai>LIVE MUSIC</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>MEETING</pattern>
+        <template>
+            Kafe ini terdapat tempat meeting dengan kapasitas 40 orang
+        </template>
+    </category>
+    <category>
+        <pattern>* MEETING *</pattern>
+        <template>
+            <srai>MEETING</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* PERTEMUAN *</pattern>
+        <template>
+            <srai>MEETING</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>MINUMUM SPEND</pattern>
+        <template>
+            Kafe ini tidak memiliki minimum spend
+        </template>
+    </category>
+    <category>
+        <pattern>* MINUMUM SPEND *</pattern>
+        <template>
+            <srai>MINUMUM SPEND</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* MINUMUMSPEND *</pattern>
+        <template>
+            <srai>MINUMUM SPEND</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* MINIMAL * UANG *</pattern>
+        <template>
+            <srai>MINUMUM SPEND</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>RANGE HARGA</pattern>
+        <template>
+            Makanan dikisaran harga 20 hingga 149 Ribu ~
+            Minuman dikisaran harga 23 hingga 40 Ribu
+        </template>
+    </category>
+    <category>
+        <pattern>* RANGE HARGA *</pattern>
+        <template>
+            <srai>RANGE HARGA</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>RANGE HARGA *</pattern>
+        <template>
+            <srai>RANGE HARGA</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>KISARAN HARGA *</pattern>
+        <template>
+            <srai>RANGE HARGA</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* KISARAN HARGA *</pattern>
+        <template>
+            <srai>RANGE HARGA</srai>
+        </template>
+    </category>
+</aiml>
